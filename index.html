@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Class 1 Lab b</title>
+    <style>
+        body {
+            background-color: #f0ebe8;
+        }
+
+        h1,
+        h2 {
+            color: #c9ada7;
+        }
+
+        p,
+        li {
+            color: #6b9080;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+
+    </header>
+    <main>
+        <h1>Class 1 Lab</h1>
+        <h2>How do you like your coffee?</h2>
+        <p>Here are the available options:</p>
+        <ul>
+            <li>Sugar</li>
+            <li>Cream</li>
+            <li>Iced</li>
+            <li>Flavored</li>
+        </ul>
+    </main>
+    <footer>
+        <script>
+            let answer1 = prompt('Do you like sugar in you coffee?');
+            console.log(answer1);
+            if (answer1 === 'yes') {
+                alert('Adding sugar to your coffee!');
+            };
+
+            let answer2 = prompt('Do you like cream in you coffee?');
+            console.log(answer2);
+            if (answer2 === 'yes') {
+                alert('Adding cream to your coffee!');
+            };
+
+            let answer3 = prompt('Do you like your coffee flavored with syrup?');
+            console.log(answer3);
+            if (answer3 === 'yes') {
+                alert('Flavoring your coffee!');
+            };
+
+            let answer4 = prompt('Do you like your coffee iced?');
+            console.log(answer4);
+            if (answer4 === 'yes') {
+                alert('Iced coffee coming up!');
+            };
+
+            alert('You said ' + answer1 + ' to sugar, ' + answer2 + ' to cream, ' + answer3 + ' to flavor, and ' + answer4 + ' to iced coffee.');
+
+
+
+        </script>
+    </footer>
+</body>
+
+</html>
