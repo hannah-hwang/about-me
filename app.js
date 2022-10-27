@@ -72,30 +72,31 @@ if (answer5 === 'no' || answer5 === 'n') {
     ('Please answer with "yes/y" or "no/n".')
 };
 
-let myNumber = 4;
-let attempts = 4;
-for (let i = 0; i < myNumber; i++) {
+
+for (let i = 0; i < 4; i++) {
     let answer6 = prompt('Guess a number between 1-10.');
     console.log('Number response: ' + answer6);
-    if (answer6 === myNumber) {
+    if (answer6 === "6") {
         alert('Correct!');
         score++;
         break;
     }
-    else if (answer6 < myNumber) {
+    else if (answer6 < 6) {
         alert('Nope! You guessed too low.');
-        attempts--;
     }
-    else if (answer6 > myNumber) {
+    else if (answer6 > 6) {
         alert('Nope! You guessed too high.');
-        attempts--;
+    }
+    if (i >= 3) {
+        alert('Sorry! The number was 6.')
     }
 }
 
 let favTea = ['oolong tea', 'black tea', 'barley tea', 'green tea']
-for (let i = 0; i < favTea.length; i++) {
+for (let i = 0; i < 6; i++) {
     let answer7 = prompt('Which of the following is my favorite tea: oolong tea, matcha, black tea, barley tea, jasmine tea, green tea, or earl gray tea?');
-    console.log('Favorite tea response:' + answer7)
+    answer7 = answer7.toLowerCase();
+    console.log('Favorite tea response:' + answer7);
 }
 
 alert('Your final score is ' + score + ' out of 7!')
