@@ -7,6 +7,7 @@ alert('Welcome to my website ' + usersName + '! Let\'s get things started with a
 
 let score = 0;
 
+function question1(){
 let answer1 = prompt('Was I born in fall?');
 answer1 = answer1.toLowerCase();
 console.log('Fall question response: ' + answer1);
@@ -19,7 +20,8 @@ if (answer1 === 'yes' || answer1 === 'y') {
 } else {
     alert('Please answer with "yes/y" or "no/n".');
 };
-
+}
+question1();
 let answer2 = prompt('Do I have any pets?');
 answer2 = answer2.toLowerCase();
 console.log('Pets question response: ' + answer2);
