@@ -19,7 +19,7 @@ if (answer1 === 'yes' || answer1 === 'y') {
     alert('Wrooong! I was born in November.');
 } else {
     alert('Please answer with "yes/y" or "no/n".');
-};
+}
 }
 question1();
 function question2(){
@@ -34,7 +34,7 @@ if (answer2 === 'yes' || answer2 === 'y') {
     alert('Incorrect! I have 1 cat.');
 } else {
     alert('Please answer with "yes/y" or "no/n".');
-};
+}
 }
 question2();
 
@@ -50,11 +50,11 @@ if (answer3 === 'no' || answer3 === 'n') {
     alert('Nope! I am actually bilingual.');
 } else {
     alert('Please answer with "yes/y" or "no/n".');
-};
+}
 }
 question3();
 
-function question4(){}
+function question4(){
 let answer4 = prompt('Do I enjoy playing cozy games?');
 answer4 = answer4.toLowerCase();
 console.log('Cozy games response: ' + answer4);
@@ -66,7 +66,7 @@ if (answer4 === 'yes' || answer4 === 'y') {
     alert('Nooo I love cozy games!');
 } else {
     alert('Please answer with "yes/y" or "no/n".');
-};
+}
 }
 question4();
 
@@ -82,7 +82,7 @@ if (answer5 === 'no' || answer5 === 'n') {
     alert('Good guess! No, but I do enjoy doing puzzles though.');
 } else {
     ('Please answer with "yes/y" or "no/n".')
-};
+}
 }
 question5();
 
