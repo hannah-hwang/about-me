@@ -90,15 +90,36 @@ for (let i = 0; i < 4; i++) {
     if (i >= 3) {
         alert('Sorry! The number was 6.')
     }
-}
+};
 
-let favTea = ['oolong tea', 'black tea', 'barley tea', 'green tea']
-for (let i = 0; i < 6; i++) {
-    let answer7 = prompt('Which of the following is my favorite tea: oolong tea, matcha, black tea, barley tea, jasmine tea, green tea, or earl gray tea?');
-    answer7 = answer7.toLowerCase();
-    console.log('Favorite tea response:' + answer7);
-}
+let favTea = ['oolong tea', 'black tea', 'barley tea', 'green tea'];
+function teaQuestion() {
+    for (let i = 0; i < 6; i++) {
+        let answer7 = prompt('What is my favorite tea?').toLowerCase();
+        console.log('Favorite tea response:' + answer7);
+        if (i >= 5) {
+            alert('Sorry! You have no more remaining attempts. My favorite teas are ');
+            break;
+        }
+        for (let j = 0; j < favTea.length; j++) {
+            // answer7 = answer7.toLowerCase();
+            console.log(answer7);
+            if (answer7 === favTea[j]) {
+                alert('Correct!');
+                score++;
+                i = 100;
+                break;
 
-alert('Your final score is ' + score + ' out of 7!')
+            }
+        }
+        if (i < 6) {
+            alert('That was incorrect! Guess my favorite tea again.');
+        }
+
+    }
+}
+teaQuestion();
+
+alert('Your final score is ' + score + ' out of 7!');
 
 alert('Good job ' + usersName + '! Thanks for playing!');
