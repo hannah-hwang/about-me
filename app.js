@@ -98,11 +98,10 @@ function teaQuestion() {
         let answer7 = prompt('What is my favorite tea?').toLowerCase();
         console.log('Favorite tea response:' + answer7);
         if (i >= 5) {
-            alert('Sorry! You have no more remaining attempts. My favorite teas are ');
+            alert('Sorry! You have no more remaining attempts.');
             break;
         }
         for (let j = 0; j < favTea.length; j++) {
-            // answer7 = answer7.toLowerCase();
             console.log(answer7);
             if (answer7 === favTea[j]) {
                 alert('Correct!');
