@@ -7,6 +7,7 @@ alert('Welcome to my website ' + usersName + '! Let\'s get things started with a
 
 let score = 0;
 
+function question1(){
 let answer1 = prompt('Was I born in fall?');
 answer1 = answer1.toLowerCase();
 console.log('Fall question response: ' + answer1);
@@ -18,8 +19,10 @@ if (answer1 === 'yes' || answer1 === 'y') {
     alert('Wrooong! I was born in November.');
 } else {
     alert('Please answer with "yes/y" or "no/n".');
-};
-
+}
+}
+question1();
+function question2(){
 let answer2 = prompt('Do I have any pets?');
 answer2 = answer2.toLowerCase();
 console.log('Pets question response: ' + answer2);
@@ -31,8 +34,11 @@ if (answer2 === 'yes' || answer2 === 'y') {
     alert('Incorrect! I have 1 cat.');
 } else {
     alert('Please answer with "yes/y" or "no/n".');
-};
+}
+}
+question2();
 
+function question3(){
 let answer3 = prompt('Am I trilingual?');
 answer3 = answer3.toLowerCase();
 console.log('Trilingual question response: ' + answer3);
@@ -44,8 +50,11 @@ if (answer3 === 'no' || answer3 === 'n') {
     alert('Nope! I am actually bilingual.');
 } else {
     alert('Please answer with "yes/y" or "no/n".');
-};
+}
+}
+question3();
 
+function question4(){
 let answer4 = prompt('Do I enjoy playing cozy games?');
 answer4 = answer4.toLowerCase();
 console.log('Cozy games response: ' + answer4);
@@ -57,8 +66,11 @@ if (answer4 === 'yes' || answer4 === 'y') {
     alert('Nooo I love cozy games!');
 } else {
     alert('Please answer with "yes/y" or "no/n".');
-};
+}
+}
+question4();
 
+function question5(){
 let answer5 = prompt('Do I collect jigsaw puzzles?');
 answer5 = answer5.toLowerCase();
 console.log('Jigsaw puzzle response: ' + answer5);
@@ -70,9 +82,11 @@ if (answer5 === 'no' || answer5 === 'n') {
     alert('Good guess! No, but I do enjoy doing puzzles though.');
 } else {
     ('Please answer with "yes/y" or "no/n".')
-};
+}
+}
+question5();
 
-
+function guessNumber(){
 for (let i = 0; i < 4; i++) {
     let answer6 = prompt('Guess a number between 1-10.');
     console.log('Number response: ' + answer6);
@@ -91,6 +105,8 @@ for (let i = 0; i < 4; i++) {
         alert('Sorry! The number was 6.')
     }
 };
+}
+guessNumber();
 
 let favTea = ['oolong tea', 'black tea', 'barley tea', 'green tea'];
 function teaQuestion() {
