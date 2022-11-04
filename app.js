@@ -2,7 +2,6 @@
 'use strict';
 
 let usersName = prompt('What is your name?');
-console.log('users name: ' + usersName);
 alert('Welcome to my website ' + usersName + '! Let\'s get things started with a pop quiz! :)');
 
 let score = 0;
@@ -10,7 +9,6 @@ let score = 0;
 function question1() {
     let answer1 = prompt('Was I born in fall?');
     answer1 = answer1.toLowerCase();
-    console.log('Fall question response: ' + answer1);
 
     if (answer1 === 'yes' || answer1 === 'y') {
         alert('Correct! I was born in November.');
@@ -25,7 +23,7 @@ question1();
 function question2() {
     let answer2 = prompt('Do I have any pets?');
     answer2 = answer2.toLowerCase();
-    console.log('Pets question response: ' + answer2);
+
 
     if (answer2 === 'yes' || answer2 === 'y') {
         alert('Yep! I have 1 cat.');
@@ -41,7 +39,6 @@ question2();
 function question3() {
     let answer3 = prompt('Am I trilingual?');
     answer3 = answer3.toLowerCase();
-    console.log('Trilingual question response: ' + answer3);
 
     if (answer3 === 'no' || answer3 === 'n') {
         alert('Correct! I am actually bilingual.');
@@ -57,7 +54,7 @@ question3();
 function question4() {
     let answer4 = prompt('Do I enjoy playing cozy games?');
     answer4 = answer4.toLowerCase();
-    console.log('Cozy games response: ' + answer4);
+
 
     if (answer4 === 'yes' || answer4 === 'y') {
         alert('Yes! I love playing cozy games :)');
@@ -73,7 +70,7 @@ question4();
 function question5() {
     let answer5 = prompt('Do I collect jigsaw puzzles?');
     answer5 = answer5.toLowerCase();
-    console.log('Jigsaw puzzle response: ' + answer5);
+
 
     if (answer5 === 'no' || answer5 === 'n') {
         alert('You\'re right! I do like doing puzzles though!');
@@ -89,7 +86,7 @@ question5();
 function guessNumber() {
     for (let i = 0; i < 4; i++) {
         let answer6 = prompt('Guess a number between 1-10.');
-        console.log('Number response: ' + answer6);
+
         if (answer6 === "6") {
             alert('Correct!');
             score++;
@@ -112,13 +109,12 @@ let favTea = ['oolong tea', 'black tea', 'barley tea', 'green tea'];
 function teaQuestion() {
     for (let i = 0; i < 6; i++) {
         let answer7 = prompt('What is my favorite tea?').toLowerCase();
-        console.log('Favorite tea response:' + answer7);
+
         if (i >= 5) {
             alert('Sorry! You have no more remaining attempts.');
             break;
         }
         for (let j = 0; j < favTea.length; j++) {
-            console.log(answer7);
             if (answer7 === favTea[j]) {
                 alert('Correct!');
                 score++;
